@@ -62,16 +62,12 @@
     耶温博客 | Copyright © 2023
   </div></main></div><div class="global-ui"></div></div>
     <script src="/home/assets/js/app.3b3590da.js" defer></script><script src="/home/assets/js/2.92ea5f8d.js" defer></script><script src="/home/assets/js/36.ce11e7b8.js" defer></script>
-    <iframe ref="inlineFrame" id="inlineFrame" width="390px" height="630px" src="http://commons.triesthink.com:8080/webgl/"
-    frameborder="0"></iframe>
   </body>
 </html>
 <script>
 
 window.addEventListener("message", function (e) {
     console.log('收到message:',e)
-    let inlineFrame = document.getElementById('inlineFrame').contentWindow
-    inlineFrame.postMessage(e.data, 'http://commons.triesthink.com:8080/webgl/')
 });
 
 </script>
